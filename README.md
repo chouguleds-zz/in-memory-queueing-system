@@ -26,7 +26,8 @@ The postman collection is added in the git repository which has all the request 
 ##### Note:
 To perform the operations, Redis transactions `(multi/exec)` is used everywhere to acheive the consistency.
 - When user subscribes to any topic the entry is created in the mongodb collection.
-- And when a producer created a content, Add it to the `Redis` list with name `messages` and publish an event `new message` using redis `pub/sub` model.
+- And when a producer created a content, Check if the list has already reached the limit and if not Add it to the `Redis` list with name `messages` and publish an event `new message` using redis `pub/sub` model.
+- Queue size can be configured from the `queue config`
 - As soon as the message is received by the `Redis Subscriber`, It starts a `worker` which is responsible for the following things.
     - Get all the subscribers with the given topic.
     -  Add the message to the seperate list for every consumer. List name nome `consumer_userId`.
