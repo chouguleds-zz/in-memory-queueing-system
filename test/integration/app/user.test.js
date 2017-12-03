@@ -1,7 +1,7 @@
 'use strict'
 
 // During the test the env variable is set to test
-process.env.NODE_ENV = 'test'
+
 
 const User = require('../../../app/users/users.model')
 
@@ -68,8 +68,7 @@ describe('Users', function () {
         name: 'deepak',
         email: 'deepak@gmail.com',
         password: 'deepak',
-        role: 'patient',
-        gender: 'male'
+        role: 'patient'
       }
 
       chai.request(server)
@@ -91,8 +90,7 @@ describe('Users', function () {
         name: 'deepak',
         email: 'chougule.ds@gmail.com',
         password: 'deepak',
-        role: 'patient',
-        gender: 'male'
+        role: 'patient'
       }
 
       chai.request(server)

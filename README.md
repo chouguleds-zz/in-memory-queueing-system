@@ -1,4 +1,4 @@
-#### Problem statement:
+### Problem statement:
 Design an efficient in-memory queueing system with low latency requirements
 `Functional specification`:
 - Queue holds JSON messages
@@ -10,7 +10,7 @@ Design an efficient in-memory queueing system with low latency requirements
 - Handle concurrent writes and reads consistently between producer and consumers.
 - Provide retry mechanism to handle failures in message processing.
 
-#### Postman Collection
+### Postman Collection
 The postman collection is added in the git repository which has all the request saved in it and can be used to test the application.
 
 ### Technologies and the modules used:

@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/chouguleds/in-memory-queueing-system#readme",
   "dependencies": {
-    "axios": "^0.17.1",
+    "axios": "0.17.1",
     "bcrypt": "1.0.2",
     "bluebird": "3.5.0",
     "body-parser": "1.17.1",
@@ -29,8 +29,8 @@
     "joi": "10.3.1",
     "jwt-then": "0.6.0",
     "mongoose": "4.9.2",
-    "redis": "^2.8.0",
-    "uuid": "^3.1.0"
+    "redis": "2.8.0",
+    "uuid": "3.1.0"
   },
   "devDependencies": {
     "chai": "3.5.0",
