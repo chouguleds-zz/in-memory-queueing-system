@@ -18,6 +18,7 @@ The postman collection is added in the git repository which has all the request 
 * Web Framework: `Express.js`
 * Database: `MongoDB` and `Redis` for the in-memory queue
 * Validations: `Joi`
+* Test: `Mocha, Chai, Sinon`
 * ORM: `Mongoose`
 * Authentication and Authorization: `JSON Web Token`
 
@@ -184,3 +185,5 @@ Response: {
 * Application is built using latest node version with `async/await`.
 * Authentication and authorization are handled.
 * Validations are properly handled.
+* Test cases are written.
+* Linting is used.
